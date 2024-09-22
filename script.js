@@ -1,7 +1,12 @@
 let scrollTimeout;
 
 window.addEventListener('wheel', function(event) {
-    event.preventDefault();
+    // 화면 너비가 800px 이하일 때 기본 스크롤 동작 허용
+    if (window.innerWidth <= 800) {
+        return;
+    }
+
+    event.preventDefault(); // 기본 동작 방지 (화면 너비가 800px 이상일 때만)
     if (scrollTimeout) return;  // 스크롤 중복 방지
 
     let direction = event.deltaY > 0 ? 1 : -1;
@@ -25,12 +30,14 @@ window.addEventListener('wheel', function(event) {
 
 
 
+
 const backToTopButton = document.getElementById('backToTop');
 
 // 스크롤이 일정량 내려갔을 때 버튼 표시
 window.addEventListener('scroll', function() {
     if (window.pageYOffset > 300) {
         backToTopButton.style.display = 'block';
+        console.log(this.pageYOffset);
     } else {
         backToTopButton.style.display = 'none';
     }
