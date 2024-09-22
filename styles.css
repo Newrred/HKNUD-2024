@@ -1,0 +1,268 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pretendard', sans-serif;
+    background-image: url('./imgs/bg02.png');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh; /* 화면 크기 맞춤 */
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    font-size: 4vmax;
+    border-bottom: 1px solid #ddd;
+    color: rgb(255, 255, 255);
+}
+
+/* 패널 1 ------------------------------------------------------------------------*/
+.mainPanel {
+    margin-top: 1vmax;
+    align-items: center;
+    text-align: center;
+}
+.mainTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainTitle p {
+    width: 80%;
+    font-size: 3.3vmax; /* 텍스트 크기 설정 */
+    font-weight: 500;
+    line-height: 140%;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+#small-icon {
+    font-size: 0.8em; /* 크기를 조정 */
+    position: relative;
+    top: -4px; /* 아이콘을 살짝 위로 이동 */
+}
+
+
+
+.mainGraphics {
+    margin-top: 10vmax;
+    display: flex;
+    justify-content: space-between;
+}
+
+ /* 메인 왼쪽 버튼 그래픽--------------------------- */
+.left-graphics {
+    margin-top: -4vmax;
+    width: 20vmax;
+    font-size: 1vmax;
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: center; /* 세로 가운데 정렬 */
+    flex-direction: column; /* 자식 요소를 세로로 정렬하려면 사용 */
+}
+#onlineButton {
+    width: 15vmax; 
+    height: 3vmax; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 3vmax; 
+    border:0.1vmax solid white;
+    background-color: black;
+    color: white;
+}
+#onlineButton:hover {
+    color: black;
+    background-color: white;
+}
+#small-icon2 {
+    font-size: 0.8em; /* 크기를 조정 */
+    position: relative;
+    top: -1px; /* 아이콘을 살짝 위로 이동 */
+}
+
+#interactionBusinessIcon {width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/interactionBusinessIcon.png);}
+#DigitalProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/DigitalProjectIcon.png);}
+#brandManagementIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/brandManagementIcon.png);}
+#visualProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/visualProjectIcon.png);}
+
+
+
+
+ /* 메인 가운데 그래픽 추후 인터렉션 추가---------------------------- */
+.main-graphic {
+    width: 60vmax;
+
+}
+
+
+ /* 메인 오른쪽 텍스트------------------------------------ */
+.right-text {
+    margin-top: -4vmax;
+    width: 20vmax;
+    font-size: 1vmax;
+    text-align: left;
+}
+#textTitle01 {
+    font-size: 1.5vmax;
+    font-weight: 500;
+}
+#textTitle02 {
+    font-size: 3.3vmax;
+    font-weight: 700;
+}
+#text01 {
+    margin-top: -1.2vmax;
+    font-size: 1vmax;
+    font-weight: 300;
+}
+
+#textTitle03 {
+    margin-top: -2vmax;
+    font-size: 1.5vmax;
+    font-weight: 500;
+}
+
+
+
+#panel2_img01 {
+    width: 45vmax;
+    height: 10vmax;
+    position: relative;
+    left: 6vmax;
+    top: 12vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./imgs/panel2_img01.png);
+}
+#panel2_img02 {
+    width: 100vmax;
+    height: 30vmax;
+    position:relative;
+    left: -26vmax;
+    top: 24vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./imgs/panel2_img02.png);
+}
+
+#panel3_img01 {
+    width: 65vmax;
+    height: 40vmax;
+    position:relative;
+    left: 16vmax;
+    top: 20vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./imgs/panel3_img01.png);
+}
+
+.panel4 {
+        scroll-snap-align: start;
+        width: 100%;
+        height: 100vh; /* 화면 크기 맞춤 */
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid #ddd;
+        color: rgb(255, 255, 255);
+}
+#panel4_img01 {
+    width: 60vmax;
+    height: 24vmax;
+    position:absolute;
+    bottom: 4vmax;
+    left: 8vmax;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(./imgs/panel4_img01.png);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:left;
+}
+.link-div {
+    margin-top: 2vmax;
+    margin-left: 2.5vmax;
+    margin-right: -2vmax;
+    font-weight: 600;
+    font-size: 1.5vmax;
+    width: 10vmax;
+
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border:0.1vmax solid rgb(255, 255, 255);
+}
+
+.link-div p {
+    margin:0;
+}
+.link-div :hover {
+    margin:0;
+    border:0.1vmax solid rgb(0, 0, 0);
+}
+
+
+
+#bottomText {
+    position: absolute;
+    bottom: 5vmax;
+    font-size: 1vmax;
+    color: rgb(172, 172, 172);
+}
+
+
+
+
+
+
+ /* 위로가기 버튼 */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* 기본적으로 숨김 */
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
+
+
+
+
+ /* 반응형 세팅 */
+@media (max-width: 768px) {
+    .mainTitle p {
+        font-size: 2vmax;
+    }
+}
