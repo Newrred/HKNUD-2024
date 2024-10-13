@@ -1,27 +1,27 @@
 let scrollTimeout;
 
+window.addEventListener('scroll', function() {
+    if (window.innerWidth <= 800) {
+        let scrollTop = window.pageYOffset;
+        let maxScroll = document.body.scrollHeight - window.innerHeight; // 전체 웹 높이에서 현재 화면 높이를 뺀 값
+
+        // 스크롤에 따른 투명도 변화 (최대 1에서 0까지 서서히 사라지게)
+        let opacity = 1 - (scrollTop / maxScroll);
+
+        // 스크롤에 따른 이미지의 위로 올라가는 이동 (최대 100px 위로 이동)
+        let translateY = Math.min(scrollTop / maxScroll * 100, 100);
+
+        // 이미지에 적용할 스타일
+        const scrollImage = document.getElementById('scrollImage');
+        scrollImage.style.opacity = opacity;
+        scrollImage.style.transform = `translateY(-${translateY}px)`;
+    }
+});
+
 window.addEventListener('wheel', function(event) {
     // 화면 너비가 800px 이하일 때 기본 스크롤 동작 허용
     if (window.innerWidth <= 800) {
-        window.addEventListener('scroll', function() {
-            if (window.innerWidth <= 800) {
-                let scrollTop = window.pageYOffset;
-                let maxScroll = document.body.scrollHeight - window.innerHeight; // 전체 웹 높이에서 현재 화면 높이를 뺀 값
-        
-                // 스크롤에 따른 투명도 변화 (최대 1에서 0까지 서서히 사라지게)
-                let opacity = 1 - (scrollTop / maxScroll);
-        
-                // 스크롤에 따른 이미지의 위로 올라가는 이동 (최대 100px 위로 이동)
-                let translateY = Math.min(scrollTop / maxScroll * 100, 100);
-        
-                // 이미지에 적용할 스타일
-                const scrollImage = document.getElementById('scrollImage');
-                scrollImage.style.opacity = opacity;
-                scrollImage.style.transform = `translateY(-${translateY}px)`;
-            }
-        });
-        
-        
+        return;
     }
 
     event.preventDefault(); // 기본 동작 방지 (화면 너비가 800px 이상일 때만)
