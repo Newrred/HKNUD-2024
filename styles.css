@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Pretendard', sans-serif;
-    background-image: url('./imgs/bg02.png');
+    background-image: url('./imgs/bg04.jpg');
     background-size: 100% auto;
+
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -72,14 +73,14 @@ body {
 
 
 .mainGraphics {
-    margin-top: 10vmax;
+    margin-top: 2vmax;
     display: flex;
     justify-content: space-between;
 }
 
  /* 메인 왼쪽 버튼 그래픽--------------------------- */
 .left-graphics {
-    margin-top: -4vmax;
+    margin-top: 5vmax;
     width: 20vmax;
     font-size: 1vmax;
     display: flex;
@@ -108,10 +109,10 @@ body {
     top: -1px; /* 아이콘을 살짝 위로 이동 */
 }
 
-#interactionBusinessIcon {width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/interactionBusinessIcon.png);}
-#DigitalProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/DigitalProjectIcon.png);}
-#brandManagementIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/brandManagementIcon.png);}
-#visualProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/visualProjectIcon.png);}
+#interactionBusinessIcon {width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/Green.png);}
+#DigitalProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/Blue.png);}
+#brandManagementIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/yellow.png);}
+#visualProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/pink.png);}
 
 
 
@@ -119,13 +120,39 @@ body {
  /* 메인 가운데 그래픽 추후 인터렉션 추가---------------------------- */
 .main-graphic {
     width: 60vmax;
-
+    position: relative;
 }
+.mainGraphicPos{
+    position: absolute; 
+    margin-left: auto; 
+    margin-right: auto; 
+    left: 0; right: 0; 
+    text-align: center; 
+    width: 60vmax; 
+    height: 46vmax; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+
+#graphicTop{height:46.27vmax; background-image: url(./imgs/ss/Artboard_bg.png); z-index: 100;}
+#graphicName{background-image: url(./imgs/mainGraphics/web_Name0.png);}
+#graphicGradient{background-image: url(./imgs/mainGraphics/web_Gradiant0.png);z-index: 99;}
+#graphicCenter{background-image: url(./imgs/mainGraphics/web_Center0.png);}
+#digitalProject_Graphic{ background-image: url(./imgs/ss/Artboard_blue.png);}
+#interactionBusiness_Graphic{ background-image: url(./imgs/ss/Artboard_green.png);}
+#visualProject_Graphic{ background-image: url(./imgs/ss/Artboard_pink.png);}
+#brandManagement_Graphic{ background-image: url(./imgs/ss/Artboard_yellow.png);}
 
 
  /* 메인 오른쪽 텍스트------------------------------------ */
 .right-text {
-    margin-top: -4vmax;
+    margin-top: 5vmax;
+    display: flex;
+    justify-content: center; /* 가로 가운데 정렬 */
+    align-items: left; /* 세로 가운데 정렬 */
+    flex-direction: column; /* 자식 요소를 세로로 정렬하려면 사용 */
+
     width: 20vmax;
     font-size: 1vmax;
     text-align: left;
@@ -235,13 +262,21 @@ body {
 .link-div :hover {
     margin:0;
     border:0.1vmax solid rgb(0, 0, 0);
+    background-color: #000000;
+    color: #ffffff;
 }
 
 
 
 #bottomText {
+    padding-top: 1vmax; 
+    margin-bottom: auto; 
+    text-align: center;
+    width: 100%;
+    height: 5vmax;
+    background-color: #000000;
     position: absolute;
-    bottom: 1vmax;
+    bottom: 0vmax;
     font-size: 1vmax;
     color: rgb(255, 255, 255);
 }
@@ -255,7 +290,7 @@ body {
 #backToTop {
     z-index: 999;
     position: fixed;
-    bottom: 0vmax;
+    bottom: 1vmax;
     right: 2vmax;
     background-image:url(./imgs/button_img01.png);
     background-size: contain;
@@ -274,13 +309,15 @@ body {
 }
 
 
-
+.maintitle_m2{display: none;}
+#textTitle02_m{display: none;}
+#textTitle03_m{display: none;}
+.noNobile{display: flex;}
+#scrollImage{display: none;}
 
  /* 반응형 세팅 */
 @media (max-width: 800px) {
-    .mainTitle_pc {
-        display: none;
-    }
+    .noNobile{display: none;}
     .mainTitle_m {
         margin-top: 4vmin;
         display: flex;
@@ -288,21 +325,50 @@ body {
         justify-content: center;
         align-items: center;
     }
+    .maintitle_m2 {
+        display: flex;
+        font-size: 10vmin;
+        font-weight: 550;
+        width: 100vmin;
+        justify-content: center;
+        align-items: center;
+    }
     .mainTitle_m p {
         width: 100%;
         font-size: 6.5vmin; /* 텍스트 크기 설정 */
-        font-weight: 500;
+        font-weight: 550;
         line-height: 140%;
         color: rgb(255, 255, 255);
         margin: 0;
     }
+
+    #scrollImage {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 70vmax;
+        left: -25vmin;
+        background-image: url(./imgs/mainGraphics/Artboard_m2.png);
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        opacity: 1;
+        top: 120vmin;
+        transform: translateY(0); /* 기본적으로 위치는 0 */
+    }
     body {
         background-color: black;
-        background-image: url(./imgs/mainGraphic_m.png);
+        background-image: url(./imgs/mainGraphics/Artboard_m2.png);
         background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: -10vmax 50vmax;
+        background-size: 00%;
+        background-position: -10vmax 60vmax;
         width: 100vmin;
+        scroll-snap-type: y mandatory;
+        overflow: hidden;
+        user-select: none;
+        background-attachment: scroll;
+        transition: background-position 0.5s ease, opacity 0.5s ease;
+        opacity: 1;
     }
     .mainGraphics {
         margin-top: 10vmin;
@@ -312,17 +378,21 @@ body {
 
 
     .left-graphics {
-        margin-top: -4vmax;
-        width: 0vmin;
-        font-size: 1vmax;
-        display: none;
-        justify-content: center; /* 가로 가운데 정렬 */
-        align-items: center; /* 세로 가운데 정렬 */
-        flex-direction: column; /* 자식 요소를 세로로 정렬하려면 사용 */
+        width: 0;
+        height: 0;
     }
-    .main-graphic {
-        display: none;
+
+    #onlineButton{
+        z-index: 999;
+        position: absolute;
+        width: 40vmin;
+        height: 10vmin;
+        font-size: 4vmin;
+        left: 45vmin;
+        top: 75vmin;
     }
+    #onlineButton:active{background-color: #ffffff;color: #000000;}
+
     .right-text {
         margin-top: -4vmax;
         margin-left: 10vmin;
@@ -334,28 +404,28 @@ body {
         justify-content: space-around;
     }
     #textTitle01 {
-        font-size: 1.5vmax;
+        font-size: 4.5vmin;
         font-weight: 500;
     }
     #text01 {
-        margin-top: -1.2vmax;
-        font-size: 1vmax;
-        font-weight: 300;
+        margin-top: -4vmin;
+        font-size: 3.3vmin;
+        font-weight: 250;
     }
-
-    #textTitle02 {
-        font-size: 3.3vmax;
+    
+    #textTitle02_m {
+        width: 100vmin;
+        display: block;
+        font-size: 8vmin;
         font-weight: 700;
         position: absolute;
-        left: 35vmin;
-        top: 5vmin;
     }
-    #textTitle03 {
-        margin-top: -2vmax;
-        font-size: 1.5vmax;
+    #textTitle03_m {
+        display: block;
+        font-size: 4vmin;
         font-weight: 500;
         position: absolute;
-        left: 35vmin;
-        top: 30vmin;
+        left: 35.5vmin;
+        top: 25vmin;
     }
 }

@@ -10,16 +10,18 @@
 </head>
 <body>
     <button id="backToTop"></button>
+    <div id="scrollImage"></div>
 
     <div class="container">
         <section class="panel">
             <div class="mainPanel">
-                <div class="mainTitle_pc">
+                <div class="mainTitle_pc noNobile">
                     <p>Hankyung National University Department of Design <br> 28th Graduation Exhibition : PLAYBACK <span id="small-icon">▶️</span></p> 
                 </div>
                 <div class="mainTitle_m">
                     <p>Hankyung National University<br> Deaprtment of Design <br> 28th Graduation Exhibition<br>  <span id="small-icon_m">: PLAYBACK ▶️</span></p> 
                 </div>
+                <!-- <div class="maintitle_m2"><p><span>2024 11.01 - 11.04</span></p></div> -->
 
                 <div class="mainGraphics">
 
@@ -28,10 +30,15 @@
                         <div id="DigitalProjectIcon"></div>
                         <div id="brandManagementIcon"></div>
                         <div id="visualProjectIcon"></div>
-                        <div id="onlineButton">온라인 전시장<span id="small-icon2">▶️</span></div>
+                        <div id="onlineButton"onclick="location.href='https://newrred.github.io/HKNUD-2024/';">온라인 전시장<span id="small-icon2">▶️</span></div>
                     </div>
 
-                    <div class="main-graphic">
+                    <div class="main-graphic noNobile">
+                        <div class="mainGraphicPos" id="graphicTop"></div>
+                        <div class="mainGraphicPos" id="digitalProject_Graphic"></div>
+                        <div class="mainGraphicPos" id="interactionBusiness_Graphic"></div>
+                        <div class="mainGraphicPos" id="brandManagement_Graphic"></div>
+                        <div class="mainGraphicPos" id="visualProject_Graphic"></div>
                     </div>
 
                     <div class="right-text">
@@ -47,14 +54,14 @@
                         </div>
                         <div>
                             <div>
-                                <p id="textTitle01">Online</p>
-                                <p id="text01">www.hknudesign.kr/show/2024<br>@hknudesign.show</p>
+                                <p class="noNobile" id="textTitle01">Online</p>
+                                <p class="noNobile" id="text01">www.hknudesign.kr/show/2024<br>@hknudesign.show</p>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <p id="textTitle02">2024<br>11.01 - 11.04</p>
-                                <p id="textTitle03">Opening 11.01 (Fri) 16:00</p>
+                                <p class="noNobile" id="textTitle02">2024<br>11.01 - 11.04</p><p id="textTitle02_m">2024 11.01 - 11.04</p>
+                                <p class="noNobile" id="textTitle03">Opening 11.01 (Fri) 16:00</p><p id="textTitle03_m">Opening 11.01 (Fri) 16:00</p>
                             </div>
                         </div>
                     </div>
