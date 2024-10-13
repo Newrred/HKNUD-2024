@@ -364,7 +364,7 @@ body {
         background-position: -10vmax 60vmax;
         width: 100vmin;
         scroll-snap-type: y mandatory;
-        overflow: hidden;
+        overflow: auto;
         user-select: none;
         background-attachment: scroll;
         transition: background-position 0.5s ease, opacity 0.5s ease;
