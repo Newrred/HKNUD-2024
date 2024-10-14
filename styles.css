@@ -494,6 +494,7 @@ body {
         flex-direction: column;
     }
     .link-div {
+        letter-spacing: -0.5px;
         margin-block-start:10vmin ;
         font-weight: 600;
         font-size: 4vmin;
