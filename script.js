@@ -14,7 +14,7 @@ window.addEventListener('scroll', function() {
         // 이미지에 적용할 스타일
         const scrollImage = document.getElementById('scrollImage');
         scrollImage.style.opacity = opacity;
-        scrollImage.style.transform = `translateY(-${translateY}px)`;
+        scrollImage.style.transform = `translateY(-${translateY*1.5}vmin)`;
     }
 });
 
@@ -85,7 +85,7 @@ ib_btn.addEventListener("mouseenter", function() {
 });
 ib_btn.addEventListener("mouseleave", function() {
     ib_btn.style.filter = "grayscale(0)";
-    ib_image.style.backgroundImage = "url('./imgs/ss/Artboard_green.png')";
+    ib_image.style.backgroundImage = "url('./imgs/mainGraphics/Artboard_green.png')";
 });
 
 dp_btn.addEventListener("mouseenter", function() {
@@ -94,7 +94,7 @@ dp_btn.addEventListener("mouseenter", function() {
 });
 dp_btn.addEventListener("mouseleave", function() {
     dp_btn.style.filter = "grayscale(0)";
-    dp_image.style.backgroundImage = "url('./imgs/ss/Artboard_blue.png')";
+    dp_image.style.backgroundImage = "url('./imgs/mainGraphics/Artboard_blue.png')";
 });
 
 bm_btn.addEventListener("mouseenter", function() {
@@ -103,7 +103,7 @@ bm_btn.addEventListener("mouseenter", function() {
 });
 bm_btn.addEventListener("mouseleave", function() {
     bm_btn.style.filter = "grayscale(0)";
-    bm_image.style.backgroundImage = "url('./imgs/ss/Artboard_yellow.png')";
+    bm_image.style.backgroundImage = "url('./imgs/mainGraphics/Artboard_yellow.png')";
 });
 
 vp_btn.addEventListener("mouseenter", function() {
@@ -112,7 +112,7 @@ vp_btn.addEventListener("mouseenter", function() {
 });
 vp_btn.addEventListener("mouseleave", function() {
     vp_btn.style.filter = "grayscale(0)";
-    vp_image.style.backgroundImage = "url('./imgs/ss/Artboard_pink.png')";
+    vp_image.style.backgroundImage = "url('./imgs/mainGraphics/Artboard_pink.png')";
 });
 
 

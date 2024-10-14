@@ -23,7 +23,7 @@ body {
 
 .panel {
     scroll-snap-align: start;
-    width: 100%;
+    width: 100vw;
     height: 100vh; /* 화면 크기 맞춤 */
     display: flex;
     justify-content: center;
@@ -82,17 +82,17 @@ body {
 .left-graphics {
     margin-top: 5vmax;
     width: 20vmax;
-    font-size: 1vmax;
+    font-size: 1.7vmax;
     display: flex;
     justify-content: center; /* 가로 가운데 정렬 */
-    align-items: center; /* 세로 가운데 정렬 */
+    align-items:end; /* 세로 가운데 정렬 */
     flex-direction: column; /* 자식 요소를 세로로 정렬하려면 사용 */
 }
 #onlineButton {
     width: 15vmax; 
-    height: 3vmax; 
+    height: 5vmax; 
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     align-items: center; 
     margin-top: 3vmax; 
     border:0.1vmax solid white;
@@ -104,14 +104,14 @@ body {
     background-color: white;
 }
 #small-icon2 {
-    font-size: 0.8em; /* 크기를 조정 */
+    font-size: 1.7vmax; /* 크기를 조정 */
     position: relative;
     top: -1px; /* 아이콘을 살짝 위로 이동 */
 }
 
 #interactionBusinessIcon {width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/Green.png);}
 #DigitalProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/Blue.png);}
-#brandManagementIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/yellow.png);}
+#brandManagementIcon {margin-top: 3vmax; width: 15vmax; height: 3.1vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/yellow.png);}
 #visualProjectIcon {margin-top: 3vmax; width: 15vmax; height: 3vmax; align-items: center; justify-content: center; background-size: contain; background-repeat: no-repeat; background-image: url(./imgs/btn/pink.png);}
 
 
@@ -135,14 +135,14 @@ body {
     background-size: contain;
 }
 
-#graphicTop{height:46.27vmax; background-image: url(./imgs/ss/Artboard_bg.png); z-index: 100;}
+#graphicTop{height:46.27vmax; background-image: url(./imgs/mainGraphics/Artboard_bg.png); z-index: 100;}
 #graphicName{background-image: url(./imgs/mainGraphics/web_Name0.png);}
 #graphicGradient{background-image: url(./imgs/mainGraphics/web_Gradiant0.png);z-index: 99;}
 #graphicCenter{background-image: url(./imgs/mainGraphics/web_Center0.png);}
-#digitalProject_Graphic{ background-image: url(./imgs/ss/Artboard_blue.png);}
-#interactionBusiness_Graphic{ background-image: url(./imgs/ss/Artboard_green.png);}
-#visualProject_Graphic{ background-image: url(./imgs/ss/Artboard_pink.png);}
-#brandManagement_Graphic{ background-image: url(./imgs/ss/Artboard_yellow.png);}
+#digitalProject_Graphic{ background-image: url(./imgs/mainGraphics/Artboard_blue.png);}
+#interactionBusiness_Graphic{ background-image: url(./imgs/mainGraphics/Artboard_green.png);}
+#visualProject_Graphic{ background-image: url(./imgs/mainGraphics/Artboard_pink.png);}
+#brandManagement_Graphic{ background-image: url(./imgs/mainGraphics/Artboard_yellow.png);}
 
 
  /* 메인 오른쪽 텍스트------------------------------------ */
@@ -180,17 +180,17 @@ body {
 
 
 #panel2_img01 {
-    width: 45vmax;
-    height: 10vmax;
+    width: 80vmax;
+    height: 40vmax;
     position: relative;
-    left: 6vmax;
+    left: -5vmax;
     top: 12vmax;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(./imgs/panel2_img01.png);
+    background-image: url(./imgs/panel2_img00.png);
 }
 #panel2_img02 {
-    width: 100vmax;
+    width: 120vmax;
     height: 30vmax;
     position:relative;
     left: -26vmax;
@@ -237,6 +237,17 @@ body {
     text-align: center;
     align-items: center;
     justify-content:left;
+}
+.link-divAll {display: flex;
+    width: 50vmax;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border:0.1vmax solid rgb(255, 255, 255);
 }
 .link-div {
     margin-top: 2vmax;
@@ -321,7 +332,7 @@ body {
     .mainTitle_m {
         margin-top: 4vmin;
         display: flex;
-        width: 100vmin;
+        width: 100vw;
         justify-content: center;
         align-items: center;
     }
@@ -329,12 +340,12 @@ body {
         display: flex;
         font-size: 10vmin;
         font-weight: 550;
-        width: 100vmin;
+        width: 100vw;
         justify-content: center;
         align-items: center;
     }
     .mainTitle_m p {
-        width: 100%;
+        width: 100vw;
         font-size: 6.5vmin; /* 텍스트 크기 설정 */
         font-weight: 550;
         line-height: 140%;
@@ -345,11 +356,12 @@ body {
     #scrollImage {
         display: flex;
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 70vmax;
-        left: -25vmin;
+        left: 0vmin;
         background-image: url(./imgs/mainGraphics/Artboard_m2.png);
-        background-size: cover;
+        background-size: 130%;
+        background-repeat: no-repeat;
         background-position: center;
         transition: transform 0.5s ease, opacity 0.5s ease;
         opacity: 1;
@@ -358,74 +370,180 @@ body {
     }
     body {
         background-color: black;
-        background-image: url(./imgs/mainGraphics/Artboard_m2.png);
-        background-repeat: no-repeat;
-        background-size: 00%;
-        background-position: -10vmax 60vmax;
-        width: 100vmin;
+        background-image: url();
         scroll-snap-type: y mandatory;
         overflow: auto;
+        overflow-x: hidden;
         user-select: none;
         background-attachment: scroll;
-        transition: background-position 0.5s ease, opacity 0.5s ease;
+        transition: background-position 0.1s ease, opacity 0.1s ease;
         opacity: 1;
     }
     .mainGraphics {
         margin-top: 10vmin;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
 
     .left-graphics {
-        width: 0;
-        height: 0;
+        display: none;
     }
-
-    #onlineButton{
-        z-index: 999;
-        position: absolute;
-        width: 40vmin;
-        height: 10vmin;
-        font-size: 4vmin;
-        left: 45vmin;
-        top: 75vmin;
+    #onlineButton_m{
+        font-size: 5vmin;
+        font-weight: 500;
+        margin: 0 auto;
+        width: 50vmin; 
+        height: 12vmin; 
+        display: flex;
+        justify-content: space-evenly; 
+        align-items: center; 
+        margin-top: 3vmax; 
+        border:0.1vmax solid white;
+        background-color: black;
+        color: white;
     }
-    #onlineButton:active{background-color: #ffffff;color: #000000;}
+    #onlineButton_m:active{background-color: #ffffff;color: #000000;}
 
     .right-text {
         margin-top: -4vmax;
-        margin-left: 10vmin;
-        width: 100%;
+        width: 100vw;
         font-size: 1vmax;
-        text-align: left;
+        text-align: center;
         position: relative;
         display: block;
         justify-content: space-around;
     }
     #textTitle01 {
+
         font-size: 4.5vmin;
         font-weight: 500;
     }
     #text01 {
+
         margin-top: -4vmin;
         font-size: 3.3vmin;
         font-weight: 250;
     }
     
     #textTitle02_m {
+        margin: 0 auto;
         width: 100vmin;
+        text-align: center;
         display: block;
-        font-size: 8vmin;
+        font-size: 6vmin;
         font-weight: 700;
-        position: absolute;
     }
     #textTitle03_m {
+        margin: 0 auto;
+        width: 100vmin;
+        text-align: center;
         display: block;
         font-size: 4vmin;
-        font-weight: 500;
-        position: absolute;
-        left: 35.5vmin;
-        top: 25vmin;
+        font-weight: 300;
+    }
+.panel{width: 100vmin; display: flex;}
+    #panel2_img01 {
+        width:90vmin;
+        height: 100vmin;
+        position:relative;
+        left:0vmin;
+        top: 12vmax;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(./imgs/panel2_img00_m.png);
+    }
+    #credit_img01 {
+        width: 90vmin;
+        height: 120vmin;
+        position:relative;
+        left: 0vmin;
+        top: 12vmax;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(./imgs/credit_img01_m.png);
+    }
+    
+    .panel4 {
+            scroll-snap-align: start;
+            width: 100vw;/* 화면 크기 맞춤 */
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            border-bottom: 0px solid #ddd;
+            color: rgb(255, 255, 255);
+    }
+    #panel4_img01 {
+        width: 90vmin;
+        height: 120vmin;
+        position:relative;
+        bottom: 4vmin;
+        left: 0vmin;
+        top: 40vmin;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(./imgs/panel4_img01_m.png);
+        display: flex;
+        text-align: left;
+        align-items:flex-start;
+        justify-content:left;
+        flex-direction: column;
+    }
+    .link-div {
+        margin-block-start:10vmin ;
+        font-weight: 600;
+        font-size: 4vmin;
+        width: 30vmin;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        border:0.1vmax solid rgb(255, 255, 255);
+    }
+    .link-divAll {
+        margin-top: 20vmin;
+        margin-left:4vmin ;
+        display: block;
+        width: 20vmin;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        align-items: center;
+        justify-content: left;
+        border:0.1vmax solid rgb(255, 255, 255);
+    }
+    
+    .link-div p {
+        margin:0;
+    }
+    .link-div :hover {
+        margin:0;
+        border:0.1vmax solid rgb(0, 0, 0);
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    #backToTop {
+        z-index: 999;
+        position: fixed;
+        bottom: 3.5vmax;
+        right: 2vmax;
+        background-image:url(./imgs/button_img01.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 5vmax;
+        height: 5vmax;
+        border: none;
+        cursor: pointer;
+        display: none; /* 기본적으로 숨김 */
+        background-color: #ffffff00;
+        background-blend-mode: difference;
     }
 }
