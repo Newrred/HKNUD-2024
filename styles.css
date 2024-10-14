@@ -345,8 +345,9 @@ body {
         align-items: center;
     }
     .mainTitle_m p {
+        word-spacing: 0px;
         width: 100vw;
-        font-size: 7.5vmin; /* 텍스트 크기 설정 */
+        font-size: 7vmin; /* 텍스트 크기 설정 */
         font-weight: 550;
         line-height: 140%;
         color: rgb(255, 255, 255);
@@ -369,6 +370,7 @@ body {
         transform: translateY(0); /* 기본적으로 위치는 0 */
     }
     body {
+        letter-spacing: 0px;
         background-color: black;
         background-image: url();
         scroll-snap-type: y mandatory;
