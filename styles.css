@@ -148,7 +148,8 @@ body {
 
  /* 메인 오른쪽 텍스트------------------------------------ */
 .right-text {
-    letter-spacing: -0.5px;
+    word-spacing: 0px;
+    letter-spacing: 0px;
     margin-top: 5vmax;
     display: flex;
     justify-content: center; /* 가로 가운데 정렬 */
@@ -274,6 +275,8 @@ body {
 
 
 #bottomText {
+    word-spacing: 0px;
+    letter-spacing: 0px;
     padding-top: 1vmax; 
     padding-bottom: 2vmax;
     margin-bottom: auto; 
@@ -286,7 +289,7 @@ body {
     position: absolute;
     bottom: 0px;
     font-size: 1vmax;
-    color: rgb(255, 255, 255);
+    color: rgb(140, 140, 140);
 }
 
 
