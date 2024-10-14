@@ -4,7 +4,7 @@ body {
     font-family: 'Pretendard', sans-serif;
     background-image: url('./imgs/bg04.jpg');
     background-size: 100% auto;
-
+    letter-spacing: -2px;
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -13,6 +13,7 @@ body {
     height: 100vh;
     user-select: none;
     background-color: black;
+    word-spacing: 3px;
 }
 
 .container {
@@ -90,7 +91,7 @@ body {
 }
 #onlineButton {
     width: 15vmax; 
-    height: 5vmax; 
+    height: 4vmax; 
     display: flex;
     justify-content: space-evenly; 
     align-items: center; 
@@ -147,6 +148,7 @@ body {
 
  /* 메인 오른쪽 텍스트------------------------------------ */
 .right-text {
+    letter-spacing: -0.5px;
     margin-top: 5vmax;
     display: flex;
     justify-content: center; /* 가로 가운데 정렬 */
@@ -172,32 +174,23 @@ body {
 }
 
 #textTitle03 {
-    margin-top: -2vmax;
+    margin-top: -3vmax;
     font-size: 1.5vmax;
     font-weight: 500;
 }
+#onlineButton_m{display: none;}
 
 
 
 #panel2_img01 {
-    width: 80vmax;
-    height: 40vmax;
+    width: 75vmax;
+    height: 30vmax;
     position: relative;
     left: -5vmax;
     top: 12vmax;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url(./imgs/panel2_img00.png);
-}
-#panel2_img02 {
-    width: 120vmax;
-    height: 30vmax;
-    position:relative;
-    left: -26vmax;
-    top: 24vmax;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(./imgs/panel2_img02.png);
 }
 
 #credit_img01 {
@@ -208,10 +201,11 @@ body {
     top: 12vmax;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(./imgs/credit_img01.png);
+    background-image: url(./imgs/panel3_img01.png);
 }
 
 .panel4 {
+        min-height: 100%;
         scroll-snap-align: start;
         width: 100%;
         height: 100vh; /* 화면 크기 맞춤 */
@@ -281,13 +275,16 @@ body {
 
 #bottomText {
     padding-top: 1vmax; 
+    padding-bottom: 2vmax;
     margin-bottom: auto; 
+    align-items: center;
     text-align: center;
+    justify-content: center;
     width: 100%;
-    height: 5vmax;
+    height:2vmax;
     background-color: #000000;
     position: absolute;
-    bottom: 0vmax;
+    bottom: 0px;
     font-size: 1vmax;
     color: rgb(255, 255, 255);
 }
@@ -346,7 +343,7 @@ body {
     }
     .mainTitle_m p {
         width: 100vw;
-        font-size: 6.5vmin; /* 텍스트 크기 설정 */
+        font-size: 7.5vmin; /* 텍스트 크기 설정 */
         font-weight: 550;
         line-height: 140%;
         color: rgb(255, 255, 255);
@@ -406,6 +403,7 @@ body {
     #onlineButton_m:active{background-color: #ffffff;color: #000000;}
 
     .right-text {
+        letter-spacing: -1px;
         margin-top: -4vmax;
         width: 100vw;
         font-size: 1vmax;
@@ -482,7 +480,7 @@ body {
         position:relative;
         bottom: 4vmin;
         left: 0vmin;
-        top: 40vmin;
+        top: 20vmin;
         background-repeat: no-repeat;
         background-size: contain;
         background-image: url(./imgs/panel4_img01_m.png);
@@ -503,21 +501,21 @@ body {
         text-align: left;
         align-items: center;
         justify-content: center;
-        border:0.1vmax solid rgb(255, 255, 255);
+        border:0.1vmax solid rgba(255, 255, 255, 0);
     }
     .link-divAll {
-        margin-top: 20vmin;
+        margin-top: 22vmin;
         margin-left:4vmin ;
         display: block;
         width: 20vmin;
         font-weight: 600;
         cursor: pointer;
-        background-color: #ffffff;
+        background-color: #ffffff00;
         color: rgb(0, 0, 0);
         text-align: left;
         align-items: center;
         justify-content: left;
-        border:0.1vmax solid rgb(255, 255, 255);
+        border:0.1vmax solid rgba(255, 255, 255, 0);
     }
     
     .link-div p {
