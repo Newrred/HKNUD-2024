@@ -9,7 +9,7 @@ window.addEventListener('scroll', function() {
         let opacity = 1 - (scrollTop / maxScroll);
 
         // 스크롤에 따른 이미지의 위로 올라가는 이동 (최대 100px 위로 이동)
-        let translateY = Math.min(scrollTop / maxScroll * 100, 100);
+        let translateY = Math.min(scrollTop / maxScroll * 100, 500);
 
         // 이미지에 적용할 스타일
         const scrollImage = document.getElementById('scrollImage');
