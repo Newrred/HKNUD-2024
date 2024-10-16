@@ -331,6 +331,9 @@ body {
     .noNobile{display: none;}
     .mainTitle_m {
         margin-top: 4vmin;
+        margin-left: 1vmin;
+        margin-right: 1vmin;
+        
         display: flex;
         width: 100vw;
         justify-content: center;
